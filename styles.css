@@ -1,0 +1,101 @@
+body {
+    background-image: url('bg01.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+    color: #d4c9c9;
+    box-sizing: border-box;
+    padding: 20px 25px;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+h1 {
+    font-size: 52px;
+    height: auto;
+    width: 100%;
+    color: #ffffff;
+}
+
+span {
+    text-decoration: none;
+    border-bottom: 1px dotted rgb(114, 110, 110);
+    border-radius: 5px;
+}
+
+.email {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+    border-width: 1px;
+    width: 30vw;
+}
+
+.submit-button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #1cb495;
+    color: #ffffff;
+    border-radius: 5px;
+    border-color: #1cb495;
+    border: 1px;
+}
+
+.submit-button:hover {
+    background-color: #b0f7e8
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: rgb(141, 138, 138);
+}
+
+a {
+    color: rgb(102, 99, 99);
+    padding: 5px;
+}
+
+a:hover {
+    color: white;
+}
+
+#msg {
+    color: #1cb495;
+    padding-left: 25px;
+    display: none;
+}
+
+.submit-button:focus+#msg {
+    display: block;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        padding: 15px;
+    }
+    header {
+        display: none;
+    }
+    .email,
+    .submit-button {
+        width: 80vw;
+        display: block;
+        box-sizing: content-box;
+    }
+    .email,
+    .submit-button {
+        margin-bottom: 10px;
+    }
+}
